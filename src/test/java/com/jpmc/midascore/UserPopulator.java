@@ -14,6 +14,7 @@ public class UserPopulator {
     private DatabaseConduit databaseConduit;
 
     public void populate() {
+        // read contents of the specified file and formats user lines
         String[] userLines = fileLoader.loadStrings("/test_data/lkjhgfdsa.hjkl");
         for (String userLine : userLines) {
             String[] userData = userLine.split(", ");

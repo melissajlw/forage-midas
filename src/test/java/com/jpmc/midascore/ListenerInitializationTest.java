@@ -11,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @SpringBootTest
 public class ListenerInitializationTest {
 
+    // Verify TransactionListener bean is correctly initialized by Spring
     @Autowired
     private TransactionListener transactionListener;
 
